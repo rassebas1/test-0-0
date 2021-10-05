@@ -1,0 +1,12 @@
+.Todolist-Container{
+  width: 100%;
+  display: flex;  
+}
+.TodoList{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-around;
+
+}
