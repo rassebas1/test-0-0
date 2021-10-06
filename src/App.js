@@ -10,7 +10,7 @@ import logo from "./Componentes/logo192.png"
 
 const defaultTodos =[
 
-    {text:'comprar cebolla', activeTodo: true, contactInfo:"email1", 
+    {text:'comprar cebolla', activeTodo: false, contactInfo:"email1", 
     profilePicture:"imagen1"},
     {text:'acabar la pag', activeTodo: false, contactInfo:"email2",
     profilePicture:"imagen2"},
