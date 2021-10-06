@@ -1,0 +1,40 @@
+.todoContainer {
+  height: 53px;
+  width: 95%;
+  left: 0px;
+  top: 61px;
+  border-radius: 6px;
+  padding: 8px;
+
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.profilePicture,
+.contactInfo,
+.TodoItem-p,
+.TodoItem-p--complete {
+  
+  margin: auto;
+  height: 53px;
+width: 822px;
+left: 0px;
+top: 61px;
+border-radius: 6px;
+padding: 8px;
+
+  align-content: center;
+  justify-content: center;
+}
+.contactInfo {
+    text-align: center;
+}
+.TodoItem-p {
+    background-color: #67BF72;
+}
+.TodoItem-p--complete {
+    background-color: red;
+}

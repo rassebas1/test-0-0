@@ -8,8 +8,7 @@ import App from './App';
 
 ReactDOM.render(
 
-    <
-    App saludo = "Bienvenido" / > ,
+    <App saludo = "Bienvenido" /> ,
 
     document.getElementById('root')
 );
