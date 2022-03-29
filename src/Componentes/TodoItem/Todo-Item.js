@@ -2,12 +2,7 @@ import React from "react";
 import "./Todo-Item.css";
 
 function TodoItem(props) {
-  const [todoStatus, setActiveTodo] = React.useState(props.activeTodo);
-
-    const onDelete = () => {
-    console.log("Cambio de Estado de " + props.text+" "+todoStatus);
-    setActiveTodo(!todoStatus);
-  };
+  
 
   return (
     <ul className="todoContainer">
@@ -16,12 +11,15 @@ function TodoItem(props) {
       </li>
       <li className="contactInfo">{props.contactInfo}</li>
       <li
-        className={`TodoItem-p ${todoStatus && "TodoItem-p--complete"}`}
+        className={`TodoItem-p ${props.activeTodo && "TodoItem-p--complete"}`}
       >
         {props.text}
       </li>
-      <li className="actions" onClick={() => onDelete(!todoStatus)}>
+      <li className="actions" onClick={() => props.onComplete(props.text)}>
         iconos
+      </li>
+      <li className="eliminar" onClick={()=>props.onDelete(props.text)}>
+        borrar
       </li>
     </ul>
   );
