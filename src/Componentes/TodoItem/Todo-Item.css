@@ -33,8 +33,10 @@ padding: 8px;
     text-align: center;
 }
 .TodoItem-p {
-    background-color: #67BF72;
+    
+    background-color: red;
 }
 .TodoItem-p--complete {
-    background-color: red;
+  background-color: #67BF72;
+  text-decoration:line-through;
 }
